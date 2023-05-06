@@ -1,0 +1,299 @@
+body{
+  background-color: #282828;
+  margin: 0;
+  /* overflow-x: hidden; */
+  /* max-width: 100vw; */
+}
+.test{
+  max-width: 95%;
+}
+.navbar{
+  background-color: #282828;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+.logo{
+  width: 200px;
+}
+.green{
+border: 1px solid #13E8E9;
+}
+.line{
+  width: 60%;
+  margin-left: 100px;
+}
+.header{
+  height: 20vh;
+  margin-left: 100px;
+  margin-top: 70px;
+  font-size: 40px;
+  color: #fc2054;
+  font-family: 'Poppins', sans-serif;
+}
+.mid-header{
+  margin-left: 70px;
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  padding: 30px;
+}
+span{
+  color: #fc2054;
+}
+.text{
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 30px;
+}
+.balls{
+  /* max-width: 95%; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.ball{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(38,179,180,1) 33%, rgba(252,32,84,1) 100%, rgba(0,212,255,1) 100%);
+  opacity: 0;
+  max-width: 100%;
+}
+.name{
+  margin-top: 60px;
+  color: #F5F5F5;
+}
+
+        /* /////BOOTSTRAP////// */
+.my-card-one, .my-card-two{
+  border: 1px solid #13E8E9;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.my-heading{
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+}
+.my-text{
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+} 
+      /* /////CARD//// */
+.container-image {
+  position: relative;
+}
+.img-fluid{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 2s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container-image:hover .img-fluid{
+  opacity: 0.3;
+}
+.container-image:hover .middle{
+  opacity: 1;
+}
+.text-inside{
+  background-color: #F5F5F5;
+  color: #13E8E9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.no-decoration{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #13E8E9;
+}
+        /* /////////////// */
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #F5F5F5;
+}
+label{
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 80px;
+  padding: 20px;
+  font-size: 17px;
+}
+.text-input{
+  background-color: #282828;
+  border: none;
+  width: 300px;
+  color: #F5F5F5;
+}
+.btn{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background-color: #13E8E9;
+  margin-left: 100px;
+  width: 200px;
+}
+.info-main{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.robot{
+  border-radius: 10px;
+}
+
+
+    /* ---- START PARTICLES reset ---- */
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    /* position: absolute; */ /* изза этого не скролится экран */
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+    /* background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+
+      /* ///////FINISH////// */
+
+    @media all and (max-width: 1300px){
+      /* .test{
+        max-width: 90%;
+      } */
+      .my-heading{
+      margin-left: 20px;
+    }
+    label{
+      margin-left: 50px;
+    }
+  }
+
+    @media all and (max-width: 800px){
+      .header{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 35px;
+      }
+      .text{
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+      .mid-header{
+        margin-left: 30px;
+      }
+      .robot{
+        margin-top: 30px;
+      }
+      .btn{
+      margin-left: 170px;
+      }
+      .ball{
+      width: 110px;
+      height: 110px;
+      }
+      .name{
+        margin-top: 45px;
+      }
+    }
+    
+    @media all and (max-width: 500px){
+      .test{
+        max-width: 90%;
+      }
+      .logo{
+        width: 150px;
+      }
+      .header{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 30px;
+      }
+      .btn{
+        margin-left: 110px;
+      }
+      .ball{
+        margin-right: 20px;
+      }
+
+  
+      /* .balls{
+        margin-left: 0;
+        margin-right: 10px;
+      } */
+      /* .ball{
+        width: 100px;
+        height: 100px;
+      } */
+    }
